@@ -6,7 +6,7 @@
 .header {
   display: flex;
   background-color: blue;
-  height: 90vh;
+  height: 100vh;
   background-image: linear-gradient(
     to bottom,
     rgb(255, 165, 0),
@@ -31,4 +31,29 @@
 }
 .text-box {
   color: aliceblue;
+  width: 75%;
+}
+@media only screen and (max-width: 960px) {
+  .header {
+    display: flex;
+    background-color: blue;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-image: url(/asset/pics/city.jpg);
+    background-size: cover;
+    clip-path: none;
+  }
+  .text-box {
+    margin: 0 auto;
+  }
+  .right {
+    display: none;
+    clip-path: none;
+  }
+  .left {
+    width: 100%;
+    clip-path: none;
+    background-color: transparent;
+  }
 }
